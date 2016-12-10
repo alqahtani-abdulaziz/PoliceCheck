@@ -1,0 +1,41 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="PoliceCheck:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PoliceCheck_jar</output-path>
+    <root id="root">
+      <element id="archive" name="PoliceCheck.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="PoliceCheck" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/activation-1.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jsr311-api-1.1.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jersey-core-1.19.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jersey-json-1.19.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/commons-lang-2.6.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/mail-1.4.5.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jaxb-impl-2.2.3-1.jar" />
+      <element id="library" level="project" name="com.google.code.gson:gson:2.8.0" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/commons-lang3-3.4.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jackson-mapper-asl-1.9.2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jettison-1.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/httpcore-4.3.3.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jaxb-api-2.2.7.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/stax-api-1.0-2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/javax.inject-1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jackson-core-asl-1.9.2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/httpclient-4.3.6.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jackson-core-2.6.0.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/commons-logging-1.1.3.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jackson-jaxrs-1.9.2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/QueryApp.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jackson-xc-1.9.2.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/jersey-client-1.19.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/commons-codec-1.10.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/azure-core-0.9.7.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/slf4j-api-1.7.12.jar" />
+      <element id="library" level="project" name="com.microsoft.azure:azure-servicebus:0.9.7" />
+      <element id="file-copy" path="$PROJECT_DIR$/../QueryApp/out/artifacts/QueryApp_jar/azure-storage-4.0.0.jar" />
+    </root>
+  </artifact>
+</component>
