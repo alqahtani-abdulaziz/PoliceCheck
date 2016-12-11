@@ -61,6 +61,7 @@ public class PoliceCheck {
         }
 
         recieveSubscribtionMessage();
+        createQueue();
 
     }
     public void recieveSubscribtionMessage(){
@@ -97,6 +98,7 @@ public class PoliceCheck {
                     int tenPercent = (int) (currentCam.getSpeedLimit() * 0.1);
                     if(object.get("speed").getAsInt() > tenPercent+currentCam.getSpeedLimit()){
                         System.out.println("PRIORITY : " + object.toString());
+
                     }else{
                         System.out.println(object.toString());
                     }
@@ -123,7 +125,6 @@ public class PoliceCheck {
         }
 
     }
-
     public void writeTable(JsonObject object){
         VehicleEntity entity = new VehicleEntity(object.get("registration").getAsString(),object.get("isOffender").getAsString());
         entity.setRegistration(object.get("registration").getAsString());
@@ -161,7 +162,7 @@ public class PoliceCheck {
         }
 
     }
- public void createTable(){
+    public void createTable(){
      try
      {
          // Retrieve storage account from connection-string.
@@ -183,4 +184,29 @@ public class PoliceCheck {
      }
 
  }
+
+    public void createQueue(){
+        ServiceBusContract service = ServiceBusService.create(config);
+        QueueInfo queueInfo = new QueueInfo("SpeedingVehicles");
+        try
+        {
+            CreateQueueResult result = service.createQueue(queueInfo);
+        }
+        catch (ServiceException e)
+        {
+           System.out.println("Queue Already Exists");
+        }
+    }
+    public void sendMessageToQueue(String messageString){
+        try
+        {
+            BrokeredMessage message = new BrokeredMessage(messageString);
+            service.sendQueueMessage("SpeedingVehicles", message);
+        }
+        catch (ServiceException e)
+        {
+            System.out.print("ServiceException encountered: ");
+            System.out.println(e.getMessage());
+        }
+    }
 }
